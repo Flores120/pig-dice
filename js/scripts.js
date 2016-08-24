@@ -13,7 +13,7 @@ Roll.prototype.addroll = function () {
   this.roll =  Math.floor(Math.random() * 6) + 1;
   if (this.roll === 1) {
     this.total -= this.roll;
-    alert("no score");
+    alert('you lose');
   }
   this.total += this.roll;
 };

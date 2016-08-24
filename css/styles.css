@@ -1,6 +1,13 @@
-#dice2 span {
-  width: 15px;
-  height: 15px;
-  border: 1px gray;
-  margin: 0;
+.jumbotron {
+  text-align: center;
 }
+
+.btn {
+  box-shadow: 2px 2px 2px grey;
+}
+ #score2 {
+     width: 15px;
+     height: 15px;
+     border: 1px gray;
+     margin: 0;
+ }
