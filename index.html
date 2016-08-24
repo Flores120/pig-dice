@@ -9,27 +9,24 @@
     <title>Pig Dice</title>
   </head>
     <body>
-     <form id="firstD">
-      <div class="container">
-        <div class="firstDice">
-          <h1>roll dice<span id='score'></span></h1>
-          <div>
-            <span id="die0"></span>
-            <span id=die1></span>
-            <input type="button" value="Roll" id="roll" onclick="update();">
-          </div>
+      <div class="jumbotron">
+        <h1>Pig Dice game</h1>
+      </div>
+      <div class="row">
+        <div class="col col-sm-6">
+          <form id="player1">
+            <h3>player 1 roll:<span id='score1'></span></h3>
+            <input class="btn btn-success"type="submit" name="name" value="Roll">
+            <span id="dice1"></span>
+          </form>
         </div>
-      </form>
-      <form id="secondD">
-        <div class="secondDice">
-          <h1>roll dice<span id='score'></span></h1>
-          <div>
-            <span id="die0"></span>
-            <span id=die1></span>
-            <input type="button" value="Roll" id="roll" onclick="update();">
-          </div>
+        <div class="col col-sm-6">
+          <form id="player2">
+            <h3>player 2 roll:<span id='score2'></span></h3>
+            <input class="btn btn-success"type="submit" name="name" value="Roll">
+            <span id="dice2"></span>
+          </form>
         </div>
-      </form>
-    </div>
+      </div>
    </body>
 </html>
