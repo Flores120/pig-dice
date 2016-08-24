@@ -1,65 +1,42 @@
 // business logic
+
 var currentscore = 0;
 var turn = 0;
 
-function Roll() {
-  // debugger;
+
+var Roll = function () {
+  this.total =  0;
+  this.dice = 0;
+}
+
+Roll.prototype.addroll = function () {
   this.roll =  Math.floor(Math.random() * 6) + 1;
-
-
-}
-
-function Player() {
-  this.totalScore = 0;
-}
-
-var playerOne = new Player();
-var playerTwo = new Player();
-
-var scoreChecker = function() {
-  var rollDice =  new Roll();
-  var score = currentScore + new Roll();
-
-  if(rollDice === 1)
-  {
-    if(turn === 0)
-    {
-      turn = 1;
-      currentScore = 0;
-    }
-    else
-    {
-      turn = 0;
-      currentScore = 0;
-    }
+  if (this.roll === 1) {
+    this.total = -1;
   }
-  else
-  {
-    if(turn === 0)
-    {
-      currentscore += rollDice;
-    }
-    else
-    {
-      turn = 0;
-    }
-  }
-}
+  this.total += this.roll;
+};
 
+var player1 = 0;
+var player2 = 0;
 
+var rollDice =  new Roll();
+var rollDice2 = new Roll();
 
-// front end
+// front end;
 $(document).ready(function() {
   $('form#player1').submit(function(event){
-    var rollDice =  new Roll();
-    // var score1 = new Roll(score)
-    $('#dice1').text(rollDice.roll);
-    $('#score1').text(score1.score);
     event.preventDefault();
+    rollDice.addroll()
+    $('#dice1').text(rollDice.roll);
+    $('#score1').text(rollDice.total);
   });
+
   $('form#player2').submit(function(event) {
-    var rollDice2 =  new Roll();
-  $('#dice2').text(rollDice2.roll);
-  event.preventDefault();
+    event.preventDefault();
+    rollDice2.addroll();
+    $('#dice2').text(rollDice2.roll);
+    $('#score2').text(rollDice2.total);
+
   });
 });
