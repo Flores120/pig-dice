@@ -1,5 +1,8 @@
 .jumbotron {
   text-align: center;
+  background-image: url("../img/dice.png");
+  color: black;
+  text-shadow: 1px 1px 1px white;
 }
 
 .btn {
@@ -13,4 +16,16 @@
  }
 #hold {
   /*text-align: center;*/
+}
+
+body {
+  background-image: url("../img/Pig.jpeg");
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+.winner1 {
+  display: none;
+}
+.winner2 {
+  display: none;
 }

@@ -54,8 +54,8 @@ $(document).ready(function() {
       $('#totalScore1').text(totalscore);
       $('#totalScore1').text();
       alert("Player 2's turn");
-      if (totalscore >= 100){
-        alert("Player one wins!!")
+      if (totalscore >= 50){
+        $(".winner1").show();
       }
     });
     $('form#hold2').submit(function(event){
@@ -65,8 +65,8 @@ $(document).ready(function() {
       $('#totalScore2').text(totalscore2);
       $('#totalScore2').text();
       alert("Player 1's turn");
-      if (totalscore2 >= 100){
-        alert("Player two wins!!")
+      if (totalscore2 >= 50){
+        $(".winner2").show();
       }
     });
 });
