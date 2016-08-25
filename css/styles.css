@@ -2,7 +2,7 @@
   text-align: center;
   background-image: url("../img/dice.png");
   color: black;
-  text-shadow: 1px 1px 1px white;
+  text-shadow: 1px 1px 1px lightgray;
 }
 
 .btn {
@@ -14,18 +14,37 @@
      border: 1px gray;
      margin: 0;
  }
-#hold {
-  /*text-align: center;*/
-}
+
 
 body {
-  background-image: url("../img/Pig.jpeg");
-  color: black;
-  text-shadow: 1px 1px 1px white;
+  background-color: #ff8080;
 }
 .winner1 {
   display: none;
 }
 .winner2 {
   display: none;
+}
+#dice1 {
+  font-size: 20px;
+  background-color: #ff8080;
+  box-shadow: 1px 1px 1px black;
+
+}
+#dice2{
+  font-size: 20px;
+  background-color: #ff8080;
+  box-shadow: 1px 1px 1px black;
+}
+h2 {
+  background-color: #ff8080;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px black;
+
+}
+h3 {
+  background-color: #ff8080;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px black;
+
 }

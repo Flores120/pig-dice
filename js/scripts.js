@@ -33,7 +33,7 @@ $(document).ready(function() {
     {
       rollDice.addroll()
     }
-    $('#dice1').append(rollDice.roll + " ");
+    $('#dice1').append("  " + rollDice.roll + "  ");
     $('#cScore1').text(rollDice.total);
   });
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
     if (turn === 0){
     rollDice2.addroll();
   }
-    $('#dice2').append(rollDice2.roll + " ");
+    $('#dice2').append("  " + rollDice2.roll + "  ");
     $('#cScore2').text(rollDice2.total);
   });
   // hold button
